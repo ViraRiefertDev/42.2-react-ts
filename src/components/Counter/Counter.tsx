@@ -15,9 +15,9 @@ function Counter() {
   console.log(setCount); */
 
   //Шаг 3 - необходимо прописать функции, которые будут менять состояние. внутри этих функций нужно использовать setCount
-  const onPlusClick = () => setCount((prevValue) => prevValue + 1);
+  const onPlusClick = ():void => setCount((prevValue:number) => prevValue + 1);
 
-  const onMinusClick = () => setCount((prevValue) => prevValue - 1);
+  const onMinusClick = ():void => setCount((prevValue:number) => prevValue - 1);
 
   return (
     <div className='counter-container'>

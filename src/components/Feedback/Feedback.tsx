@@ -6,15 +6,15 @@ function Feedback() {
   const [likesCount, setLikesCount] = useState(0);
   const [dislikesCount, setDislikesCount] = useState(0);
 
-  const onLikeClick = () => {
-    setLikesCount((prevValue) => prevValue + 1);
+  const onLikeClick = (): void => {
+    setLikesCount((prevValue: number) => prevValue + 1);
   };
 
-  const onDislikeClick = () => {
-    setDislikesCount((prevValue) => prevValue + 1);
+  const onDislikeClick = (): void => {
+    setDislikesCount((prevValue: number) => prevValue + 1);
   };
 
-  const onResetResultClick = () => {
+  const onResetResultClick = ():void => {
     setLikesCount(0);
     setDislikesCount(0);
   };
@@ -23,20 +23,17 @@ function Feedback() {
       <div className='buttons-container'>
         <div className='button-like-wrapper'>
           <span className='likes-count'>{likesCount}</span>
-          <Button onClick={onLikeClick}>
-            👍 <span className='button-label'>Like</span>
-          </Button>
+          <Button onClick={onLikeClick} name='👍 Like' />
         </div>
         <div className='button-dislike-wrapper'>
-          <Button onClick={onDislikeClick} name>
-            👎 <span className='button-label'>Dislike</span>
-          </Button>
+          <Button onClick={onDislikeClick} name='👎 Dislike' />
+
           <span className='dislikes-count'>{dislikesCount}</span>
         </div>
       </div>
       {(likesCount || dislikesCount) > 0 && (
         <div className='reset-result-wrapper'>
-          <Button onClick={onResetResultClick}>Reset Result</Button>
+          <Button onClick={onResetResultClick} name='Reset Result'/>
         </div>
       )}
     </div>
