@@ -2,10 +2,11 @@ import styled from '@emotion/styled';
 
 interface ButtonStyledProps {
   disabled: boolean;
+  buttonWidth?:string;
 }
 
 export const MainButton = styled.button<ButtonStyledProps>`
-  width: 100%;
+  width: ${({buttonWidth})=>buttonWidth};
   padding: 20px 54px;
   background-color: ${({ disabled }) => (disabled ? '#b8b6ae' : '#1f27f5')};
   font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
