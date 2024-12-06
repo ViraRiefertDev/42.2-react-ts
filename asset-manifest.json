@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "./static/js/main.552b8fe8.js",
+    "static/media/bgcats2.png": "./static/media/bgcats2.b897b3949a40dd2ca790.png",
+    "index.html": "./index.html",
+    "static/media/WPILine.svg": "./static/media/WPILine.35c8dcd56d89a3e4389a38869a603d9a.svg",
+    "main.552b8fe8.js.map": "./static/js/main.552b8fe8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.552b8fe8.js"
+  ]
+}
