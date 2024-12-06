@@ -23,6 +23,7 @@ const globalStyles = css`
   #root {
     display: flex;
     min-height: 100%;
+    justify-content: center;
   }
 `;
 
