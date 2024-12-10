@@ -11,11 +11,11 @@ import {
   TaskContainer,
   ButtonWrapper,
 } from './styled';
-import { Fact } from './types';
+
 import Spinner from '../../components/Spinner/Spinner';
 
 function Lesson10() {
-  const [catsFacts, setCatsFacts] = useState<Fact[]>([]);
+  const [catsFacts, setCatsFacts] = useState<string[]>([]);
   const [isArrayEmpty, SetIsArrayEmpty] = useState<boolean>(true);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -58,6 +58,8 @@ function Lesson10() {
   useEffect(() => {
     getCatPhoto();
   }, []);
+
+  
 
   return (
     <Lesson10Container>
