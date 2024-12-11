@@ -24,6 +24,7 @@ function Lesson10() {
   const CAT_URL = 'https://catfact.ninja/fact';
 
   const getCatPhoto = async () => {
+    setNewError(null);
     try {
       setIsLoading(true);
       const response = await axios.get(CAT_URL);

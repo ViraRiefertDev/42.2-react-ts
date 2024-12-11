@@ -50,9 +50,10 @@ export const ButtonWrapper = styled.div`
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   height: 700px;
-  width: 100%px;
+  width: 100%;
   padding: 10px;
   border: 2px solid #a3c8f0;
   border-radius: 10px;
