@@ -11,13 +11,11 @@ export const Lesson09Container = styled.div`
 `;
 
 export const GreenBox = styled.div`
-  ${boxBasicStyles}
   background: #aed4b3;
   color: #1e5926;
 `;
 
 export const BlueBox = styled.div`
-  ${boxBasicStyles}
   background: #a4dadb;
   color: #235354;
 `;
@@ -32,7 +30,4 @@ export const InputExample = styled.input`
   &::placeholder {
     color: #a19f9f;
   }
-export const ResultBlock = styled.div`
-  padding: 10px;
-  border: 2px solid blueviolet;
-`;
+  `

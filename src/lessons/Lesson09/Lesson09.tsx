@@ -2,7 +2,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import axios from "axios";
 
 import Counter from "../../components/Counter/Counter";
-import { Lesson09Container, ResultBlock } from "./styles";
+import { Lesson09Container} from "./styles";
 import Input from "../../components/Input/Input";
 
 function Lesson09() {
@@ -61,7 +61,7 @@ function Lesson09() {
 
   return (
     <Lesson09Container>
-      <ResultBlock>{joke}</ResultBlock>
+      {/* <ResultBlock>{joke}</ResultBlock> */}
       <Input name='data' placeholder="search" value={searchValue} onChange={searchOnChange} />
       <Counter countValue={count} onMinusClick={onMinusClick} onPlusClick={onPlusClick} />
     </Lesson09Container>
