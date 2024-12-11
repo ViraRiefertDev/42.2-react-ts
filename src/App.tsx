@@ -1,11 +1,11 @@
 import GlobalStyles from './styles/GlobalStyles';
 
 
-
 //lessons
 /* import Lesson06 from './lessons/lesson06/Lesson06'; */
 /* import Lesson07 from './lessons/lesson07/Lesson07'; */
 /* import Lesson08 from './lessons/Lesson08/Lesson08'; */
+
 /* import Lesson09 from './lessons/Lesson09/Lesson09'; */
 import Lesson10 from './lessons/Lesson10/Lesson10';
 
@@ -28,6 +28,7 @@ function App() {
       {/* <Consultation04/> */}
       {/* <Homework07/> */}
       {/* <Lesson08/> */}
+      <Homework08/>
       {/* <Lesson09/> */}
       {/* <Consultation05/> */}
       {/* <HW09Lesson/> */}
