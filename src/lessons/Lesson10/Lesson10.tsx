@@ -75,7 +75,7 @@ function Lesson10() {
         </InfoContainer>
       );
     }
-    if (catsFacts.length > 0) {
+    else {
       return <InfoContainer>{createCatFactList}</InfoContainer>;
     }
   };

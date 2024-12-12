@@ -1,9 +1,9 @@
 
 import "./styles.ts";
 import { InputProps } from './types';
-import { InputContainer, InputElement, Label } from './styles';
+import { InputContainer, InputElement, Label, ErrorMessage } from './styles';
 
-function Input({ name, id, type = 'text', placeholder, label, value, onChange }: InputProps) {
+function Input({ name, id, type = 'text', placeholder, label, value, onChange, error }: InputProps) {
   // console.log("Input render or re-render");
   
   return (
@@ -19,6 +19,9 @@ function Input({ name, id, type = 'text', placeholder, label, value, onChange }:
         placeholder={placeholder}
         className="input-element"
       />
+      <ErrorMessage>{error}</ErrorMessage>
+      {/* todo заменить этот блок на margin в InputContiner если ошибки нет
+      todo {error && <ErrorMessage>{error}</ErrorMessage>} */}
     </InputContainer>
   );
 }
