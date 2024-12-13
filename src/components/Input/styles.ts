@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
 
+interface InputContainerProps {}
 
-export const InputContainer = styled.div`
+export const InputContainer = styled.div<{ hasError: string|undefined }>`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap:4px;
   width: 100%;
+  padding-bottom: ${({ hasError }) => (hasError===undefined ? '22px' : ' 0px')};
 `;
 
 export const Label = styled.label`
@@ -28,7 +30,7 @@ export const InputElement = styled.input`
 `;
 
 export const ErrorMessage = styled.div`
-  height:18px;
-  color:red;
-  font-size:16px;
-`
+  height: 18px;
+  color: red;
+  font-size: 16px;
+`;
