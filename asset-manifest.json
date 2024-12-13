@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.js": "/42.2-react-ts/static/js/main.a41c799c.js",
-    "static/media/bgcats2.png": "/42.2-react-ts/static/media/bgcats2.b897b3949a40dd2ca790.png",
+    "main.js": "/42.2-react-ts/static/js/main.1592fda3.js",
     "index.html": "/42.2-react-ts/index.html",
-    "static/media/WPILine.svg": "/42.2-react-ts/static/media/WPILine.35c8dcd56d89a3e4389a38869a603d9a.svg",
-    "main.a41c799c.js.map": "/42.2-react-ts/static/js/main.a41c799c.js.map"
+    "main.1592fda3.js.map": "/42.2-react-ts/static/js/main.1592fda3.js.map"
   },
   "entrypoints": [
-    "static/js/main.a41c799c.js"
+    "static/js/main.1592fda3.js"
   ]
 }
