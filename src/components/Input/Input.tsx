@@ -20,7 +20,7 @@ function Input({ name, id, type = 'text', placeholder, label, value, onChange, e
         className="input-element"
       />
       <ErrorMessage>{error}</ErrorMessage>
-      {/* todo заменить этот блок на margin в InputContiner если ошибки нет
+     {/*  todo заменить этот блок на margin в InputContiner если ошибки нет
       todo {error && <ErrorMessage>{error}</ErrorMessage>} */}
     </InputContainer>
   );

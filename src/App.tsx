@@ -1,4 +1,11 @@
+import { BrowserRouter } from 'react-router-dom';
+
+import Layout from 'components/Layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
+
+import About from 'pages/About/About';
+import Home from 'pages/Home/Home';
+import Users from 'pages/Users/Users';
 
 //lessons
 /* import Lesson06 from './lessons/lesson06/Lesson06'; */
@@ -6,7 +13,7 @@ import GlobalStyles from './styles/GlobalStyles';
 /* import Lesson08 from './lessons/Lesson08/Lesson08'; */
 /* import Lesson09 from './lessons/Lesson09/Lesson09'; */
 /* import Lesson10 from './lessons/Lesson10/Lesson10'; */
-import Lesson11 from 'lessons/Lesson11/Lesson11';
+/* import Lesson11 from 'lessons/Lesson11/Lesson11'; */
 
 //homeworks
 /* import Homework07 from 'homeworks/Homework07/Homework07'; */
@@ -23,9 +30,11 @@ import Lesson11 from 'lessons/Lesson11/Lesson11';
 
 function App() {
   return (
-    //<></> фрагмент
-    <>
+    <BrowserRouter>
       <GlobalStyles />
+      <Layout>
+        App
+      </Layout>
       {/* <Lesson07/> */}
       {/* <Lesson06/> */}
       {/* <Lesson07/> */}
@@ -38,8 +47,8 @@ function App() {
       {/* <Consultation05/> */}
       {/* <HW09Lesson/> */}
       {/* <Lesson10/> */}
-      <Lesson11 />
-    </>
+      {/* <Lesson11 /> */}
+    </BrowserRouter>
   );
 }
 

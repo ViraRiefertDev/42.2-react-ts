@@ -16,8 +16,8 @@ function LoginForm() {
   //Создаем валидационную схему через Yup
   const schema = Yup.object().shape({
     [LOGIN_FORM_NAMES.EMAIL]: Yup.string()
+    .required('Field email is required')
       .email('Field has type email')
-      .required('Field email is required')
       .test(
         'Check value length',
         'Max 25 sympols',
@@ -63,7 +63,6 @@ function LoginForm() {
       console.log(values);
     },
   });
-
   console.log(formik);
 
   return (
