@@ -3,11 +3,11 @@ import {
   LayoutComponent,
   Header,
   NavContainer,
-  StyledNavLink,
   Main,
   Footer,
 } from './styles';
 import { LayoutProps } from './types';
+import CustomNavLink from 'components/CustomNavLink/CustomNavLink';
 
 function Layout({ children }: LayoutProps) {
   return (
@@ -16,30 +16,9 @@ function Layout({ children }: LayoutProps) {
         <Logo />
         <NavContainer>
           {/* NavLink выносят в компонент и пропсами передаем название ссылки */}
-          <StyledNavLink
-            to='/'
-            style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : 'none',
-            })}
-          >
-            Home
-          </StyledNavLink>
-          <StyledNavLink
-            to='/about'
-            style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : 'none',
-            })}
-          >
-            About
-          </StyledNavLink>
-          <StyledNavLink
-            to='/users'
-            style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : 'none',
-            })}
-          >
-            Users
-          </StyledNavLink>
+          <CustomNavLink linkName='home'/>
+          <CustomNavLink linkName='about'/>
+          <CustomNavLink linkName='users'/>
         </NavContainer>
       </Header>
       <Main>{children}</Main>
