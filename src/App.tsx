@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Layout from 'components/Layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
@@ -19,6 +19,7 @@ import Users from 'pages/Users/Users';
 /* import Homework07 from 'homeworks/Homework07/Homework07'; */
 /* import Homework08 from 'homeworks/Homework08/Homework08'; */
 /* import Homework09 from 'homeworks/Homework09/Homework09'; */
+/* import Homework11 from 'homeworks/Homework11/Homework11'; */
 
 //homeworks
 /* import Homework07 from './homeworks/Homework07/Homework07';*/
@@ -33,23 +34,59 @@ function App() {
     <BrowserRouter>
       <GlobalStyles />
       <Layout>
-        App
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/users' element={<Users/>}/>
+           {/* * если не найдем страницу делаем специальную страницу NotFound */}
+          {/* <Route path='*' element={<PageNotFound/>} */}
+          
+        </Routes>
       </Layout>
-      {/* <Lesson07/> */}
-      {/* <Lesson06/> */}
-      {/* <Lesson07/> */}
-      {/* <Consultation04/> */}
-      {/* <Homework07/> */}
-      {/* <Lesson08/> */}
-      {/* <Homework08/> */}
-      {/* <Lesson09/> */}
-      {/* <Homework09/> */}
-      {/* <Consultation05/> */}
-      {/* <HW09Lesson/> */}
-      {/* <Lesson10/> */}
-      {/* <Lesson11 /> */}
     </BrowserRouter>
   );
 }
 
+{
+  /* <Lesson07/> */
+}
+{
+  /* <Lesson06/> */
+}
+{
+  /* <Lesson07/> */
+}
+{
+  /* <Consultation04/> */
+}
+{
+  /* <Homework07/> */
+}
+{
+  /* <Lesson08/> */
+}
+{
+  /* <Homework08/> */
+}
+{
+  /* <Lesson09/> */
+}
+{
+  /* <Homework09/> */
+}
+{
+  /* <Consultation05/> */
+}
+{
+  /* <HW09Lesson/> */
+}
+{
+  /* <Lesson10/> */
+}
+{
+  /* <Lesson11 /> */
+}
+{
+  /* <Homework11/> */
+}
 export default App;
