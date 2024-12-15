@@ -15,10 +15,10 @@ function Layout({ children }: LayoutProps) {
       <Header>
         <Logo />
         <NavContainer>
-          {/* NavLink выносят в компонент и пропсами передаем название ссылки */}
           <CustomNavLink linkName='home'/>
           <CustomNavLink linkName='about'/>
           <CustomNavLink linkName='users'/>
+          <CustomNavLink linkName='clients'/>
         </NavContainer>
       </Header>
       <Main>{children}</Main>
