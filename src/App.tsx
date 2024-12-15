@@ -10,6 +10,7 @@ import Clients from 'pages/Clients/Clients';
 import Rolex from 'pages/Clients/components/Rolex/Rolex';
 import PatekPhilippe from 'pages/Clients/components/PatekPhilippe/PatekPhilippe';
 import AudemarsPiguet from 'pages/Clients/components/AudemarsPiguet/AudemarsPiguet';
+import Homework11 from 'homeworks/Homework11/Homework11';
 
 //lessons
 /* import Lesson06 from './lessons/lesson06/Lesson06'; */
@@ -43,6 +44,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/users' element={<Users/>}/>
           <Route path='/clients' element={<Clients/>}/>
+          <Route path = '/homework11' element={<Homework11/>}/>
           <Route path='/clients/rolex' element={<Rolex/>}/>
           <Route path = '/clients/patekPhilippe' element={<PatekPhilippe/>}/>
           <Route path='/clients/audemarsPiguet' element={<AudemarsPiguet/>}/>
