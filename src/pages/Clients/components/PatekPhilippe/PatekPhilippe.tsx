@@ -1,5 +1,6 @@
 import { PatekPhilippePage, Title, Country, Highlights, PopularModels } from "./styles";
-import Button from "components/Button/Button";
+import GoBackButton from "components/GoBackButton/GoBackButton";
+import { CLIENTS_LINKS } from "pages/Clients/types";
 
 function PatekPhilippe(){
   return(
@@ -8,7 +9,7 @@ function PatekPhilippe(){
       <Country>Country: Switzerland</Country>
       <Highlights>Highlights: One of the oldest and most prestigious watchmakers in the world. Famous for their complex mechanisms like perpetual calendars and minute repeaters. Often considered the epitome of luxury.</Highlights>
       <PopularModels>Popular Models: Nautilus, Calatrava, Grand Complications.</PopularModels>
-      <Button name="Go Back" onClick={()=>{}}/>
+      <GoBackButton/>
     </PatekPhilippePage>
   )
 }
