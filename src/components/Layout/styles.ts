@@ -26,23 +26,10 @@ export const Header = styled.header`
   ${commonStylesHeaderFooter};
 `;
 
-export const LogoContainer = styled.div`
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  border-radius: 50%;
-`;
-
 export const NavContainer = styled.nav`
   display: flex;
   gap: 15px;
 `;
-
-export const StyledNavLink = styled(NavLink)`
-  text-decoration:none;
-  font-size:20px;
-  color:white;
-`
 
 export const Main = styled.main`
   ${commonStylesLayoutMain};
