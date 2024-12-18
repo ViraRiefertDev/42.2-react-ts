@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Button from "components/Button/Button";
@@ -10,6 +11,15 @@ const navigate = useNavigate();
 const goToAboutPage = ()=>{
   navigate('/about');
 }
+
+// *Пример useEffect при размонтировании компонента users
+//используют при работе кэша
+// остановка таймера.. потому что он будет идти если перейдем на другую строницу Interval
+useEffect(()=>{
+  return ()=>{
+    console.log('Наш компонент Users unmounting');
+  }
+},[])
 
   return <UsersPage>Content UsersPage
     <Button name="Go to About Page" onClick={goToAboutPage}/>

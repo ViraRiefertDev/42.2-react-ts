@@ -20,6 +20,7 @@ function Layout({ children }: LayoutProps) {
           <CustomNavLink linkName='users'/>
           <CustomNavLink linkName='clients'/>
           <CustomNavLink linkName='homework11'/>
+          <CustomNavLink linkName='lesson13'/>
         </NavContainer>
       </Header>
       <Main>{children}</Main>
