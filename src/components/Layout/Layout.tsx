@@ -21,6 +21,7 @@ function Layout({ children }: LayoutProps) {
           <CustomNavLink linkName='clients'/>
           <CustomNavLink linkName='homework11'/>
           <CustomNavLink linkName='lesson13'/>
+          <CustomNavLink linkName='homework13'/>
         </NavContainer>
       </Header>
       <Main>{children}</Main>

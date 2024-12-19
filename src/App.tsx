@@ -21,6 +21,7 @@ import Homework11 from 'homeworks/Homework11/Homework11';
 /* import Lesson11 from 'lessons/Lesson11/Lesson11'; */
 import Lesson13 from 'lessons/Lesson13/Lesson13';
 import User from 'pages/Users/components/User/User';
+import Homework13 from 'homeworks/Homework13/Homework13';
 
 //homeworks
 /* import Homework07 from 'homeworks/Homework07/Homework07'; */
@@ -54,6 +55,7 @@ function App() {
           <Route path = '/clients/patekPhilippe' element={<PatekPhilippe/>}/>
           <Route path='/clients/audemarsPiguet' element={<AudemarsPiguet/>}/>
           <Route path='/lesson13' element={<Lesson13/>}/>
+          <Route path='/homework13' element={<Homework13/>}/>
 
            {/* * если не найдем страницу делаем специальную страницу NotFound */}
           {/* <Route path='*' element={<PageNotFound/>} */}
