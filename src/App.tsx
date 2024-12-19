@@ -20,6 +20,7 @@ import Homework11 from 'homeworks/Homework11/Homework11';
 /* import Lesson10 from './lessons/Lesson10/Lesson10'; */
 /* import Lesson11 from 'lessons/Lesson11/Lesson11'; */
 import Lesson13 from 'lessons/Lesson13/Lesson13';
+import User from 'pages/Users/components/User/User';
 
 //homeworks
 /* import Homework07 from 'homeworks/Homework07/Homework07'; */
@@ -44,6 +45,9 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/users' element={<Users/>}/>
+          {/* Пример консультации 7 Гибкий линк*/}
+          {/* В url добавляется параметр id(переменная) - синтаксис :id */}
+          <Route path='/users/:id' element={<User/>}/>
           <Route path='/clients' element={<Clients/>}/>
           <Route path = '/homework11' element={<Homework11/>}/>
           <Route path='/clients/rolex' element={<Rolex/>}/>
